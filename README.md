@@ -18,6 +18,10 @@ Points dont vous pourriez souhaiter avoir connaissance :<br />
 Pour lancer l'application, vous pouvez utiliser :
 
 * $ bundle install
+* $ rails db:create
+* $ rails db:migrate
+* $ rails db:migrate:status
+* $ rails db:seed
 * $ rails server
 
 Si jamais vous avez un message d'erreur qui mentionne qu'un utilisateur est déjà sur ce local host, vous pouvez utiliser la fonction suivante pour connaître le PIB de l'utilisateur :
