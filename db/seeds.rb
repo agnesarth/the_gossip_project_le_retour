@@ -2,6 +2,8 @@ require 'faker'
 
 User.destroy_all
 City.destroy_all
+Gossip.destroy_all
+GossipTag.destroy_all
 
 10.times do
   city = City.create(
@@ -23,7 +25,7 @@ end
 
 20.times do
   gossip = Gossip.create(
-    title: Faker::Name.first_name, 
+    title: Faker::Marketing.buzzwords,
     content: Faker::Movies::HarryPotter.quote,
     user: User.all.sample
     )
