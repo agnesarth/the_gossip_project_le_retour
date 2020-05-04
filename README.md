@@ -1,24 +1,56 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<strong>The Hacking Project - The gossip project - Ruby on rails</strong>
 
-Things you may want to cover:
+Objectif : Créer une application The Gossip Project avec Ruby on Rails.<br />
 
-* Ruby version
+Ce README doit normalement vous fournir toute information nécessaire pour prendre en main l'application et la lancer.<br />
 
-* System dependencies
+Points dont vous pourriez souhaiter avoir connaissance :<br />
 
-* Configuration
+## Ruby version
 
-* Database creation
+* Ruby 2.5.1
+* Rails 5.2.4
 
-* Database initialization
+## Comment lancer les tests
 
-* How to run the test suite
+Pour lancer l'application, vous pouvez utiliser :
 
-* Services (job queues, cache servers, search engines, etc.)
+* $ bundle install
+* $ rails server
 
-* Deployment instructions
+Si jamais vous avez un message d'erreur qui mentionne qu'un utilisateur est déjà sur ce local host, vous pouvez utiliser la fonction suivante pour connaître le PIB de l'utilisateur :
 
-* ...
+* $ lsof -wni tcp:4567
+
+Ensuite, vous lancez la fonction suivante :
+
+* $ kill -9 [PIB]
+
+## Database initialization
+
+Pour remplir la base de données, lancer : 
+
+* $ rails db:seed
+
+## Ce qui a été réalisé sur cet exercice
+
+Ce qui a été réalisé dans le projet du jour :
+
+* 2.1. Les bases de l'application : installation et models
+* 2.2. Les premières pages : présentation et contact
+* 2.3. Un peu de mise en forme SVP merci
+* 2.4. URL cachée, la bienvenue ;)
+* 2.5. Page d'accueil : la liste des potins
+* 2.6. Afficher un potin
+* 2.7. Afficher un utilisateur
+* 2.8. Un plus joli display
+
+## Les étapes non réalisées :
+
+* Nil
+
+## Les gems requises (cf. Gemfile)
+
+Vous trouverez dans le fichier Gemfile la liste des gems requises pour lancer l'application ($ bundle install)

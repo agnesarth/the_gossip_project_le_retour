@@ -11,6 +11,7 @@ GossipTag.destroy_all
     zip_code: Faker::Address.zip_code
   )
 end
+puts "Les villes ont été créées"
 
 10.times do
   user = User.create(
@@ -22,22 +23,23 @@ end
     city: City.all.sample
     )
 end
+puts "Les users ont été créées"
 
 20.times do
   gossip = Gossip.create(
-    title: Faker::Marketing.buzzwords,
+    title: Faker::Hipster.sentence(word_count: 2, supplemental: true, random_words_to_add: 2),
     content: Faker::Movies::HarryPotter.quote,
     user: User.all.sample
     )
 end
-
+puts "Les potins ont été créées"
 
 10.times do
     tag = Tag.create(
         title: Faker::App.name
     )
 end 
-
+puts "Les tags ont été créées"
 
 30.times do
     gossip_tag = GossipTag.create(
@@ -54,3 +56,5 @@ end
     private.content = Faker::ChuckNorris.fact
     private.save
 end
+
+puts "T'es ready pal"

@@ -21,8 +21,29 @@
 </header>
 <div class="container-fluid">
   <div class="texte-bienvenue">
-    <h1>La team TGP</h1>
-    <p>Duo de choc : Agnès & Raphaël</p>
+    <h1 class="text-center">La team TGP</h1>
+    <div class= row style= "display: flex; flex-flow: row wrap; justify-content: space-around">
+      <div class="card" style="width: 18rem">
+        <div class="card-body" style="background-color:#ffc0cb;">
+          <img src="<%=Faker::Avatar.image%>" class="img-thumbnail">
+          <h5 class="card-title text-center text-muted" >Agnès<br /></h5>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body" style="background-color:#ffc0cb;">
+          <img src="<%=Faker::Avatar.image%>" class="img-thumbnail">
+          <h5 class="card-title text-center text-muted" >Lucile<br /></h5>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem">
+        <div class="card-body" style="background-color:#ffc0cb;">
+          <img src="<%=Faker::Avatar.image%>" class="img-thumbnail">
+          <h5 class="card-title text-center text-muted" >Raphaël<br /></h5>
+        </div>
+      </div>
+    </div>
+
+    <p>ET mention spéciale à Dolorès qui fait partie du staff à l'insu de son plein gré.</p>
   </div>
 </div>
 
